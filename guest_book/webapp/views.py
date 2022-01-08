@@ -81,5 +81,3 @@ def delete_view(request, pk):
     else:
         customer.delete()
         return redirect("index_view")
-
-
