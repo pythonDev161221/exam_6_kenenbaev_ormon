@@ -31,8 +31,7 @@
         </li>
           {% endblock nav%}
       </ul>
-    {% block search %}
-    {% endblock %}
+
     </div>
   </div>
 </nav>
@@ -41,6 +40,8 @@
     <h2>
         {% block header %}No header{% endblock %}
     </h2>
+    {% block search %}
+    {% endblock %}
     {% block content %}
         No card body
     {% endblock %}
