@@ -1,16 +1,18 @@
 {% extends 'base.html'%}
 
+{% block header %}Гостевая книга{% endblock %}
+
 {% block content %}
-<div class="card">
-{% for customer in context %}
-<p>
-{{ customer.customer_name }}({{ customer.customer_email }})
-</p>
-<div>
-{{ customer.order_text }}
-</div>
-{% endfor %}
-</div>
+    {% for customer in context %}
+        <div class="card border-2 border-dark rounded-3 my-2">
+            <h6 class="card-body my-0 py-1">
+                {{ customer.customer_name }}({{ customer.customer_email }})
+            </h6>
+            <div class="card-body my-0 py-1">
+                {{ customer.order_text }}
+            </div>
+        </div>
+    {% endfor %}
 {% endblock %}
 
 {#{% for customer in context %}#}
