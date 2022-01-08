@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}New order{% endblock %}
+
+{% block nav %}
+{% endblock %}
+
+{% block header %}
+Добавить учетную запись
+{% endblock %}
+
+{% block content %}
+    <form action="{% url "create_view" %}" method="post">
+    {% include "partial/form.html" with button_text="create" %}
+    </form>
+{% endblock %}
