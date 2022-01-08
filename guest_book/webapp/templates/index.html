@@ -1,9 +1,27 @@
 {% extends 'base.html'%}
 
-{% block card_header %}
-    la;kdjsfie
+{% block content %}
+<div class="card">
+{% for customer in context %}
+<p>
+{{ customer.customer_name }}({{ customer.customer_email }})
+</p>
+<div>
+{{ customer.order_text }}
+</div>
+{% endfor %}
+</div>
 {% endblock %}
 
-{% block card_body %}
-    a;ijekfla;lj
-{% endblock %}
+{#{% for customer in context %}#}
+{#{% block card_header %}#}
+{#    {{ customer.customer_name }}({{ customer.customer_email }})#}
+{#{% endblock %}#}
+{#{% for customer in context %}#}
+{#{% block card_body %}#}
+{##}
+{#    {{ customer.order_text }}#}
+{##}
+{#{% endblock %}#}
+{# {% endfor %}#}
+{#{% endfor %}#}
