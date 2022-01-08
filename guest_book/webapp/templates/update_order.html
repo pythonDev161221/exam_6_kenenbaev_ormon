@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}New order{% endblock %}
+
+{% block nav %}
+{% endblock %}
+
+{% block header %}
+Изменить учетную запись
+{% endblock %}
+
+{% block content %}
+    <form action="{% url "update_view" customer.pk %}" method="post">
+    {% include "partial/form.html" with button_text="Изменить" %}
+    </form>
+{% endblock %}
