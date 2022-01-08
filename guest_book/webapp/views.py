@@ -14,7 +14,7 @@ def index_view(request):
 
 def search_view(request):
     form = CustomerForm()
-    search = request.GET['s']
+    search = request.GET.get('s')
     context = Customer.objects.filter(customer_name=search).order_by('-create_time')
     return render(request, 'index.html', {'context': context, 'form': form})
 
