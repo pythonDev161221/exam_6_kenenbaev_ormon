@@ -70,5 +70,65 @@
         "update_time": "2022-01-08T08:56:49.668Z",
         "status": "active"
     }
+},
+{
+    "model": "webapp.customer",
+    "pk": 9,
+    "fields": {
+        "customer_name": "sdfg",
+        "customer_email": "asd@asd.fde",
+        "order_text": "asdf sa ds fd",
+        "create_time": "2022-01-08T09:47:42.878Z",
+        "update_time": "2022-01-08T09:47:42.878Z",
+        "status": "active"
+    }
+},
+{
+    "model": "webapp.customer",
+    "pk": 10,
+    "fields": {
+        "customer_name": "rgg",
+        "customer_email": "rgg@gmail.com",
+        "order_text": "adsfe",
+        "create_time": "2022-01-08T11:23:20.993Z",
+        "update_time": "2022-01-08T11:23:20.993Z",
+        "status": "active"
+    }
+},
+{
+    "model": "webapp.customer",
+    "pk": 11,
+    "fields": {
+        "customer_name": "szdf",
+        "customer_email": "asdf@gmail.com",
+        "order_text": "asdf",
+        "create_time": "2022-01-08T11:26:44.400Z",
+        "update_time": "2022-01-08T11:26:44.400Z",
+        "status": "active"
+    }
+},
+{
+    "model": "webapp.customer",
+    "pk": 12,
+    "fields": {
+        "customer_name": "index",
+        "customer_email": "indes@gmail.com",
+        "order_text": "afsfe",
+        "create_time": "2022-01-08T11:27:07.369Z",
+        "update_time": "2022-01-08T11:27:07.369Z",
+        "status": "active"
+    }
+},
+{
+    "model": "webapp.customer",
+    "pk": 13,
+    "fields": {
+        "customer_name": "new_user",
+        "customer_email": "new_user@gmail.com",
+        "order_text": "lasdasdf dasf asd lfasdf asdfh kajshfd a",
+        "create_time": "2022-01-08T11:34:48.984Z",
+        "update_time": "2022-01-08T11:34:48.984Z",
+        "status": "active"
+    }
 }
 ]
