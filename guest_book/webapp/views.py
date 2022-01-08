@@ -12,10 +12,29 @@ def index_view(request):
     return render(request, 'index.html', {'context': context, 'form': form})
 
 
-def index_create_view(request):
+def search_view(request):
     form = CustomerForm()
-    context = Customer.objects.all().order_by('-create_time')
+    search = request.GET['s']
+    context = Customer.objects.filter(customer_name=search).order_by('-create_time')
     return render(request, 'index.html', {'context': context, 'form': form})
+
+
+def index_create_view(request):
+    context = Customer.objects.all().order_by('-create_time')
+    if request.method == "GET":
+        form = CustomerForm()
+        return render(request, 'index.html', {'context': context, 'form': form})
+    else:
+        form = CustomerForm(data=request.POST)
+        if form.is_valid():
+            customer_name = request.POST.get('customer_name')
+            customer_email = request.POST.get('customer_email')
+            order_text = request.POST.get('order_text')
+            order = Customer(customer_name=customer_name, customer_email=customer_email,
+                             order_text=order_text)
+            order.save()
+            return redirect('index_view')
+        return render(request, 'index.html', {'context': context, 'form': form})
 
 
 def create_view(request):
@@ -62,3 +81,5 @@ def delete_view(request, pk):
     else:
         customer.delete()
         return redirect("index_view")
+
+

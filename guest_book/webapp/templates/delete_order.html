@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}New order{% endblock %}
+{% block title %}Delete order{% endblock %}
 
 {% block nav %}
 {% endblock %}
@@ -17,8 +17,6 @@
     {% csrf_token %}
         <input class="user_button my-2" type="submit" value="Да">
     </form>
-{#    <button class="user_button">#}
     <a href="{% url "index_view"%}" class="user_button my-2" >Нет</a>
-{#    </button>#}
 
 {% endblock %}
