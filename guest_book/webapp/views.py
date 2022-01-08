@@ -12,6 +12,12 @@ def index_view(request):
     return render(request, 'index.html', {'context': context, 'form': form})
 
 
+def index_create_view(request):
+    form = CustomerForm()
+    context = Customer.objects.all().order_by('-create_time')
+    return render(request, 'index.html', {'context': context, 'form': form})
+
+
 def create_view(request):
     if request.method == 'GET':
         form = CustomerForm()
