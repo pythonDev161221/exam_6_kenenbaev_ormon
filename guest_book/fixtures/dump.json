@@ -58,5 +58,17 @@
         "update_time": "2022-01-08T05:53:07.070Z",
         "status": "active"
     }
+},
+{
+    "model": "webapp.customer",
+    "pk": 6,
+    "fields": {
+        "customer_name": "Honimony",
+        "customer_email": "Honymony@gmail.com",
+        "order_text": "some order from Honymony",
+        "create_time": "2022-01-08T08:12:25.127Z",
+        "update_time": "2022-01-08T08:56:49.668Z",
+        "status": "active"
+    }
 }
 ]
