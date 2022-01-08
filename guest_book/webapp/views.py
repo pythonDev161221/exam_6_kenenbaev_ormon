@@ -7,7 +7,9 @@ from .models import Customer
 
 
 def index_view(request):
-    return render(request, 'index.html', {'context': Customer.objects.all().order_by('-create_time')})
+    form = CustomerForm()
+    context = Customer.objects.all().order_by('-create_time')
+    return render(request, 'index.html', {'context': context, 'form': form})
 
 
 def create_view(request):
