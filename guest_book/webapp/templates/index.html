@@ -10,7 +10,7 @@
             <h6 class="card-body my-0 py-1">
                 {{ customer.customer_name }}({{ customer.customer_email }})
                 <a href="{% url "update_view" customer.pk %}"><i class="fas fa-edit" style="font-size: xx-large"></i></a>
-                <a href="#"><i class="fas fa-trash" style="font-size: xx-large"></i></a>
+                <a href="{% url "delete_view" customer.pk %}"><i class="fas fa-trash" style="font-size: xx-large"></i></a>
             </h6>
             <div class="card-body my-0 py-1">
                 {{ customer.order_text }}

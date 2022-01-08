@@ -45,3 +45,12 @@ def update_view(request, pk):
             customer.save()
             return redirect("index_view")
         return render(request, "update_order.html", {'customer': customer, "form": form})
+
+
+def delete_view(request, pk):
+    customer = get_object_or_404(Customer, pk=pk)
+    if request.method == 'GET':
+        return render(request, "delete_order.html", {'customer': customer})
+    else:
+        customer.delete()
+        return redirect("index_view")
