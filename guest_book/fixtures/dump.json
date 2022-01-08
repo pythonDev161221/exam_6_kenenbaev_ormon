@@ -1,0 +1,62 @@
+[
+{
+    "model": "webapp.customer",
+    "pk": 1,
+    "fields": {
+        "customer_name": "Vasya",
+        "customer_email": "Vasya@gmail.com",
+        "order_text": "Order your product",
+        "create_time": "2022-01-08T05:49:43.749Z",
+        "update_time": "2022-01-08T05:49:43.749Z",
+        "status": "active"
+    }
+},
+{
+    "model": "webapp.customer",
+    "pk": 2,
+    "fields": {
+        "customer_name": "Janybek",
+        "customer_email": "Janybek@gmail.com",
+        "order_text": "Order Janybek order to date",
+        "create_time": "2022-01-08T05:50:29.934Z",
+        "update_time": "2022-01-08T05:54:03.073Z",
+        "status": "blocked"
+    }
+},
+{
+    "model": "webapp.customer",
+    "pk": 3,
+    "fields": {
+        "customer_name": "Kanybek",
+        "customer_email": "kanybek@gmail.com",
+        "order_text": "order of kanybek",
+        "create_time": "2022-01-08T05:51:47.470Z",
+        "update_time": "2022-01-08T05:53:55.913Z",
+        "status": "blocked"
+    }
+},
+{
+    "model": "webapp.customer",
+    "pk": 4,
+    "fields": {
+        "customer_name": "Altinay",
+        "customer_email": "altinay@gmail.com",
+        "order_text": "order of Altinay",
+        "create_time": "2022-01-08T05:52:21.585Z",
+        "update_time": "2022-01-08T05:52:21.585Z",
+        "status": "active"
+    }
+},
+{
+    "model": "webapp.customer",
+    "pk": 5,
+    "fields": {
+        "customer_name": "Jazgul",
+        "customer_email": "jazgul@gmail.com",
+        "order_text": "order of jazgul",
+        "create_time": "2022-01-08T05:53:07.070Z",
+        "update_time": "2022-01-08T05:53:07.070Z",
+        "status": "active"
+    }
+}
+]
